@@ -22,7 +22,8 @@ define( [],
             if (gotoURL != null) {
                this.gotoURL = gotoURL;
             }
-      }
+      };
+
       MatrixRain.prototype.setText = function (textIn) {
             if (textIn != null)
                this.matrixText = textIn;
@@ -119,7 +120,7 @@ define( [],
             // this is a crappy hack to attach to the global namespace for the callback
             window.MatrixRainInstance = this;
             setInterval(this.render, this.renderDelay);
-      }
+      };
 
       MatrixRain.prototype.render = function() {
 
