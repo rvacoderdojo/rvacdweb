@@ -38,10 +38,15 @@
   <script type="text/javascript"
           src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDT1ZaxasbxF_1iPsEqVvVG8fC60zzeq3c&sensor=true">
   </script>
+  <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
 <script>
     var map;
+
     function initialize() {
-        var locationLatLong = new google.maps.LatLng(37.542678, -77.44256);
+        var request = {
+            reference: 'CoQBeAAAACcU5PrCrqNb4LXMQ_DHWbiY8C56MqXtkPXCYMh41e_hAUcpj_UC-bLIGcN0y5E9Xze7a8LcVFRCCwHN7_EQhlO3toADEGtr-KQGOwe7ew_Kgu6DJQxSTXH72Vqa_l5ZkyB5-_OvAj4wJ0LqIUuDMVbAz3atjaqCo8bL7AFj_PFSEhB-cdN1pUveNj4_PrMAH17gGhSF7USsLy2NuTaODtS01d1xa7fbqA'
+        };
+        var locationLatLong = new google.maps.LatLng(37.542878, -77.442549);
         var mapOptions = {
             zoom: 16,
             scrollwheel: false,
@@ -50,11 +55,26 @@
         map = new google.maps.Map(document.getElementById('map-canvas'),
                 mapOptions);
 
+        var infowindow = new google.maps.InfoWindow();
         var marker = new google.maps.Marker({
             position: locationLatLong,
             map: map,
             title: "RVA Coder Dojo"
         });
+
+        var popup_info = "<b>RVA Coder Dojo @ The Richmond Public Library</b><br/>101 E Franklin St<br/> Richmond, VA<br/>"
+                         + "<a href='https://www.google.com/maps/dir//Richmond+Public+Library+-+Main+Branch,+101+E+Franklin"
+                         + "+St,+Richmond,+VA+23219/@37.542851,-77.4424415,17z/data=!4m12!1m3!3m2!1s0x0:0x5aa0952d990bd845!"
+                         + "2sRichmond+Public+Library+-+Main+Branch!4m7!1m0!1m5!1m1!1s0x89b1113e960cb575:0x5aa0952d990bd845"
+                         + "!2m2!1d-77.442323!2d37.543024'><b>Directions</b></a>";
+        google.maps.event.addListener(marker, 'click', function() {
+            infowindow.setContent(popup_info);
+            infowindow.open(map, this);
+        });
+        infowindow.setContent(popup_info);
+        infowindow.open(map, marker);
+
+
     }
 
     google.maps.event.addDomListener(window, 'load', initialize);
