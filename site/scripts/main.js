@@ -1,13 +1,14 @@
 requirejs.config({	
 	// Create path aliases.
 	paths: {
-		'matrix' : 'matrix-rain'
+		'matrix'            : 'matrix-rain',
+        'gmaps'             : 'gmaps'
 	}
 });
 
 
-require (['matrix'],
-    function(Matrix) {
+require (['gmaps', 'matrix'],
+    function(GMaps, Matrix) {
     	// Check for canvas before doing anything else.
     	if (!!window.HTMLCanvasElement) {
 	 		var matrixRain = new Matrix();
@@ -28,6 +29,6 @@ require (['matrix'],
    			document.body.appendChild(fallback);
    		}
 
-
+        new GMaps();
     }
 );
