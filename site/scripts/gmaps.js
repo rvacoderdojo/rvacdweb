@@ -24,11 +24,11 @@ define( [],
                     title: "RVA Coder Dojo"
                 });
 
-                var popup_info = "<b>RVA Coder Dojo @ The Richmond Public Library</b><br/>101 E Franklin St<br/> Richmond, VA<br/>"
-                    + "<a href='https://www.google.com/maps/dir//Richmond+Public+Library+-+Main+Branch,+101+E+Franklin"
-                    + "+St,+Richmond,+VA+23219/@37.542851,-77.4424415,17z/data=!4m12!1m3!3m2!1s0x0:0x5aa0952d990bd845!"
-                    + "2sRichmond+Public+Library+-+Main+Branch!4m7!1m0!1m5!1m1!1s0x89b1113e960cb575:0x5aa0952d990bd845"
-                    + "!2m2!1d-77.442323!2d37.543024'><b>Directions</b></a>";
+                var popup_info = "<address><strong>RVA Coder Dojo @ The Richmond Public Library</strong><br/>101 E Franklin St<br/>"
+                    + "Richmond, VA 23219</address><a href='https://www.google.com/maps/dir//Richmond+Public+Library+-+"
+                    + "Main+Branch,+101+E+Franklin+St,+Richmond,+VA+23219/@37.542851,-77.4424415,17z/data=!4m12!1m3!3m2!"
+                    + "1s0x0:0x5aa0952d990bd845!2sRichmond+Public+Library+-+Main+Branch!4m7!1m0!1m5!1m1!1s0x89b1113e960c"
+                    + "b575:0x5aa0952d990bd845!2m2!1d-77.442323!2d37.543024'><strong>Directions</strong></a>";
                 google.maps.event.addListener(marker, 'click', function () {
                     infowindow.setContent(popup_info);
                     infowindow.open(map, this);
