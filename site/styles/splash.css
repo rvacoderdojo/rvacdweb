@@ -49,10 +49,14 @@ body {
     padding-bottom: 20px;
 }
 .sessions {
-    padding-top: 20px;
     padding-bottom: 20px;
 }
 
-.sessions h2 {
+.sessions h1, h2 {
     text-align: center;
 }
+.sessions a {
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
