@@ -11,7 +11,7 @@ require (['gmaps', 'matrix'],
     function(GMaps, Matrix) {
     	// Check for canvas before doing anything else.
     	if (!!window.HTMLCanvasElement) {
-	 		var matrixRain = new Matrix();
+	 		var matrixRain = new Matrix('coder-dojo-logo');
 	 		matrixRain.setImageURL('pics/rva-coderdojo-lg.png');
 	 		matrixRain.setText("WELCOME TO THE RVA CODER DOJO");
 	 		matrixRain.setFontSize(10);

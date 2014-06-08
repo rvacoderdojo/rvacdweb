@@ -4,7 +4,7 @@ define( [],
             console.log('Initializing map');
             var script = document.createElement('script');
             script.type = 'text/javascript';
-            script.src = 'https://maps.googleapis.com/maps/api/js?v=3&key=API_KEY&callback=displayGMap';
+            script.src = 'https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyCeUaJ0iN-DEFXwBBqXFXYJpsVmN2g2WL4&callback=displayGMap';
             document.body.appendChild(script);
             // attach callback to window.
             window.displayGMap = function() {

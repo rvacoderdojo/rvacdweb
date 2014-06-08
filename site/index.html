@@ -1,16 +1,42 @@
 <!doctype html>
 <html lang="en">
 <head>
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
   <LINK href="styles/splash.css" rel="stylesheet" type="text/css">
   <meta charset="utf-8">
   <title>RVA Coders</title>
   <meta name="description" content="RVA Coders - Coder Dojo">
   <meta name="author" content="Macon Pegram">
-  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
 </head>
 <body>
   <script data-main="scripts/main.js" src="scripts/require.js"></script>
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#rvacd-navbar">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">RVA Coder Dojo</a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="rvacd-navbar">
+              <ul class="nav navbar-nav">
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#sessions">Sessions</a></li>
+                  <li><a href="#directions">Directions</a></li>
+                  <li><a href="#faqs">FAQs</a></li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+  <div id="coder-dojo-logo"></div>
   <div class="content-container">
+      <a name="about"></a>
       <div class="container">
           <div class="about row">
               <div class="col-md-6">
@@ -35,8 +61,9 @@
               </div>
           </div>
       </div>
+      <a name="sessions"></a>
       <div class="container">
-           <div class="sessions row bg-primary">
+          <div class="sessions row bg-primary">
                <div class="col-md-12">
                    <h1 class="center-title">Upcoming Sessions</h1>
                </div>
@@ -64,10 +91,25 @@
                </div>
           </div>
       </div>
+      <a name="directions"></a>
       <div class="container">
-        <div class="map row"><div id="map-canvas" /></div>
+        <div class="map row">
+            <div class="col-md-6" id="map-canvas"></div>
+            <div class="col-md-6">
+                <h2>RVA Coder Dojo<br/>
+                Richmond Public Library Main Branch</h2>
+                <h3>
+                101 E Franklin St<br/>
+                Richmond, VA 23219
+                </h3>
+                <br/>
+                <h2>Meeting Location</h2>
+                <strong>Enter the library and walk directly down the stairs at the entrance.  Our meeting spaces are at the bottom of those steps.</strong>
+                <h2>Parking</h2>
+                <strong>Parking is available both on the street and in the parking deck at 2nd and Franklin Street</strong><br/>
+            </div>
       </div>
-  </div>
+  <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 </body>
 </html>
