@@ -1,4 +1,6 @@
 // A module to create matrix rain.
+// Original matrix-rain code from: http://thecodeplayer.com/walkthrough/matrix-rain-animation-html5-canvas-javascript
+// (refactored and enhanced by RVA Coder Dojo)
 define( [],
   function() {
       function MatrixRain (containerId) {
