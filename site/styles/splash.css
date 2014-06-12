@@ -14,12 +14,12 @@ body {
 }
 #matrix-canvas-stack canvas {
     margin: auto;
-    top: 0; left: 0; bottom: 0; right: 0;
+    top: 51px; left: 0; bottom: 0; right: 0;
     max-width: 80%;
 }
 #matrix-fallback {
     margin: auto;
-    top: 0; left: 0; bottom: 0; right: 0;
+    top: 51px; left: 0; bottom: 0; right: 0;
     max-width: 80%;
 }
 
@@ -68,4 +68,3 @@ body {
     color: #FFFFFF;
     font-weight: bold;
 }
-
