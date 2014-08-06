@@ -1,0 +1,24 @@
+{
+    "name" : "static-server",
+    "version" : "1.0.0",
+    "author" : "RVA Coder Dojo",
+    "description" : "Basic HAPI static server",
+    "contributors" : [ {
+        "name": "RVA Coder Dojo",
+        "email" : "rvacoderdojo@gmail.com"
+    }
+    ],
+    "scripts" : {
+        "start" : "node ./index.js",
+        "test" : "",
+        "predeploy" : "",
+        "postdeply" : ""
+    },
+    "dependencies" : {
+        "hapi" 			: "5.0.x"
+    },
+    "engines" : {
+        "node": ">=0.10.22"
+    }
+
+}
