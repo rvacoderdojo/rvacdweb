@@ -68,3 +68,7 @@ body {
     color: #FFFFFF;
     font-weight: bold;
 }
+
+.about p {
+    font-size: 18px;
+}
