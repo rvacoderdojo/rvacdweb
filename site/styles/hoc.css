@@ -21,3 +21,47 @@ body {
 .label-new {
     background-color: #d9534f;
 }
+
+.list-inline .btn-video {
+    margin-bottom: 10px;
+}
+.btn-video {
+    color: #fff;
+    background-color: #cd201f;
+    border-color: #cd201f;
+}
+
+.btn-video {
+    color: #fff;
+    background-color: #e52d27;
+    border-color: #e52d27;
+}
+
+.btn-video:hover {
+    color: #fff;
+    background-color: #b31217;
+    border-color: #b31217;
+}
+
+.jr-app-link img {
+    border: 1px solid #888;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    max-height: 128px;
+    box-shadow: 0px 0px 10px #888888;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.jr-app-link:hover img {
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 10px #ccc;
+}
+
+.appname {
+
+}
+.app-icons {
+    padding-bottom: 30px;
+}
