@@ -3,6 +3,10 @@ body {
     padding: 70px 5px;
 }
 
+.center-title  {
+    text-align: center;
+}
+
 .navbar-default {
     background-color: #c8c8c8;
     border-bottom-color: #888888;
@@ -64,3 +68,14 @@ body {
 .app-icons {
     padding-bottom: 30px;
 }
+
+.list-group-item>.badge-left {
+    float: left;
+    margin-right: 25px;
+    display: inline-block;
+}
+
+.hackathon-text {
+    display: inline-block;
+}
+
