@@ -26,6 +26,29 @@ body {
     background-color: #d9534f;
 }
 
+.label-hot {
+    background-color: #d9754a;
+    -webkit-animation-name: firepulse; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 1s; /* Chrome, Safari, Opera */
+    -webkit-animation-iteration-count: infinite; /* Chrome, Safari, Opera */
+    animation-name: firepulse;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+}
+
+@-webkit-keyframes firepulse {
+    from { background-color: #d9754a; }
+    to { background-color: #d9ab18; }
+}
+
+@keyframes firepulse {
+    from { background-color: #d9754a; }
+    to { background-color: #d9ab18; }
+}
+
+
+
 .list-inline .btn-video {
     margin-bottom: 10px;
 }
