@@ -15,7 +15,7 @@
         "postdeply" : ""
     },
     "dependencies" : {
-        "hapi" 			: "5.0.x"
+        "hapi" 			: "18.1.x"
     },
     "engines" : {
         "node": ">=0.10.22"
